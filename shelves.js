@@ -3,7 +3,7 @@ function Shelf(shelfName) {
   this.books = [];  //library initially has no books
 
   this.addBook = function(bookName) { //function to add a new book to the shelf
-    this.books.push(newBook);
+    this.books.push(bookName);
   }
 
   this.removeBook = function(bookName) {
