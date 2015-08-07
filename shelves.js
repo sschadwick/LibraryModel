@@ -15,7 +15,16 @@ function Shelf(shelfName) {
   this.suggestBook = function() { //suggest a random book from library
     var suggestion = this.books[Math.floor((Math.random()) * this.books.length)];
     return suggestion;
+}
+
+Shelf.prototype.toString = function() {
+  var bookString = '';
+  for (var i = 0; i < this.books.length; i++) {
+    bookString += this.books[i].toString() + '. ';
   }
+  return this.name + ': ' + bookString;
+  //convert array of books to a string of all the books
+  //result is this function returns a single string with all books
 }
 
 module.exports = Shelf;

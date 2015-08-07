@@ -4,4 +4,8 @@ function Book(author, bookName, genre) { //books have an author, a book name and
   this.genre = genre;
 }
 
+Book.prototype.toString = function() {
+  return this.bookName;
+}
+
 module.exports = Book;

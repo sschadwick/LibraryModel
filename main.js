@@ -26,7 +26,4 @@ comedy.addBook(whosOnFirst);
 comedy.addBook(iAmAmerica);
 comedy.addBook(ohMyyy);
 
-console.log(greenwoodLibrary); //log the results of entire library
-console.log(thriller); //log the results of each individual shelf
-console.log(comedy);
-console.log(comedy.suggestBook())
+console.log(greenwoodLibrary.toString());
