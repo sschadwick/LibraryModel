@@ -27,3 +27,4 @@ comedy.addBook(iAmAmerica);
 comedy.addBook(ohMyyy);
 
 console.log(greenwoodLibrary.toString());
+console.log(greenwoodLibrary.suggestBook());

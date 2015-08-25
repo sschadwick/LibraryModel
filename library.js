@@ -12,6 +12,12 @@ function Library(libraryName) { //name of library
       this.shelves.splice(i, 1);
     }
   }
+
+  //suggestBook function will choose a shelf and call Shelf.suggestBook
+  this.suggestBook = function() {
+    var suggestShelf = this.shelves[Math.floor((Math.random()) * this.shelves.length)];
+    return "Suggested Reading: " + suggestShelf.suggestBook().bookName + ' by ' + suggestShelf.suggestBook().author;
+  }
 }
 
 Library.prototype.toString = function() {
@@ -21,5 +27,6 @@ Library.prototype.toString = function() {
   }
   return this.name + ': ' + shelfString;
 }
+//returns a string with all book names
 
 module.exports = Library;

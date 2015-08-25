@@ -12,9 +12,11 @@ function Shelf(shelfName) {
       this.books.splice(i, 1); //splice out location of bookName
     }
   }
+
   this.suggestBook = function() { //suggest a random book from library
     var suggestion = this.books[Math.floor((Math.random()) * this.books.length)];
     return suggestion;
+  }
 }
 
 Shelf.prototype.toString = function() {
@@ -23,8 +25,6 @@ Shelf.prototype.toString = function() {
     bookString += this.books[i].toString() + '. ';
   }
   return this.name + ': ' + bookString;
-  //convert array of books to a string of all the books
-  //result is this function returns a single string with all books
 }
 
 module.exports = Shelf;
