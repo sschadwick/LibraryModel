@@ -13,7 +13,7 @@ greenwoodLibrary.addShelf(comedy);
 //create new book instances
 var sherlockHolmes = new Book('Sir Author Conan Doyle', 'Hound of the Baskervilles', 'Thriller');
 var scoobyDoo = new Book('Sonia Sander', 'Scooby-Doo and the Cupcake Caper', 'Thriller');
-var jamesBond = new Book('Sir Ian Fleming', 'Goldfinger', 'Thriller');
+var jamesBond = new Book('Ian Fleming', 'Goldfinger', 'Thriller');
 
 var whosOnFirst = new Book('Abott and Costello', 'Who\'s On First', 'Comedy');
 var iAmAmerica = new Book('Stephen Colbert', 'I Am America (And So Can You!)', 'Comedy');
