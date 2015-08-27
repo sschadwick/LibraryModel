@@ -2,11 +2,11 @@ function Book(author, bookName, genre) { //books have an author, a book name and
   this.author = author;
   this.bookName = bookName;
   this.genre = genre;
+}
 
-  //provides book name
-  this.toString = function() {
-    return this.bookName;
-  }
+//provides book name
+Book.prototype.toString = function() {
+  return this.bookName;
 }
 
 module.exports = Book;
